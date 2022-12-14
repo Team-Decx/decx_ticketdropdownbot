@@ -1,4 +1,5 @@
 const fs = require('fs');
+const discord = require('discord.js');
 
 async function initCommands(client, interaction) {
     const command = client.commands.get(interaction.commandName);
