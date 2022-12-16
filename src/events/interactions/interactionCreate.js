@@ -49,7 +49,7 @@ async function initInteractionSelectMenu(client, interaction) {
                 }
             }
         };
-        fs.readdirSync(`./src/selectMenu`).forEach(x => load(x));
+        fs.readdirSync(`./src/selectMenus`).forEach(x => load(x));
     }
 }
 
