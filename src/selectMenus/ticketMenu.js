@@ -33,7 +33,7 @@ module.exports = {
                     allows: [discord.PermissionFlagsBits.SendMessages, discord.PermissionFlagsBits.ViewChannel]
                 },
                 {
-                    id: interaction.guild.id,
+                    id: interaction.guild.roles.everyone,
                     deny: [discord.PermissionFlagsBits.ViewChannel]
                 },
             ],
