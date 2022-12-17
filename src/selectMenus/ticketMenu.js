@@ -25,16 +25,16 @@ module.exports = {
         const ticketChannel = await guild.channels.create({
             name: `${ticketChannelName}`,
             type: discord.ChannelType.GuildText,
-            //parent: 'DIDSSD',
+            //parent: '1053478895766208614',
             topic: `${interaction.user.id}`,
-            permissionsOverwrites: [
-                {
-                    id: interaction.user.id,
-                    allows: [discord.PermissionFlagsBits.SendMessages, discord.PermissionFlagsBits.ViewChannel]
-                },
-                {
-                    id: interaction.guild.roles.everyone,
-                    deny: [discord.PermissionFlagsBits.ViewChannel]
+            permissionOverwrites: [
+				{
+					id: interaction.user.id,
+					allow: [discord.PermissionFlagsBits.SendMessages, discord.PermissionFlagsBits.ViewChannel],
+				},
+				{
+					id: interaction.guild.roles.everyone,
+					deny: [discord.PermissionFlagsBits.ViewChannel],
                 },
             ],
         });
