@@ -25,4 +25,4 @@ const client = new Client({
 ['commands'].forEach(f => client[f] = new Collection());
 ['commands', 'events'].forEach(f => require(`./src/handlers/${f}`)(client));
 
-client.login(process.env.TOKEN);
+client.login(process.env.MTEzNzY0NTIxNjI4Nzk0ODg0MA.GUuut_.YLTcQJ8vxTmU-aaEK1pE9D01UwLlw_pP5SSBEU);
